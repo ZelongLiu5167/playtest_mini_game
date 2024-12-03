@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahjong Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="instructions-modal" class="modal">
+    <div class="modal-content">
+      <h2>Game Instructions</h2>
+      <p><strong>General Rules:</strong></p>
+      <ul>
+        <li>The game consists of 14 tiles, divided into 5 groups: 4 groups of 3 tiles and 1 group of 2 tiles.</li>
+        <li>Form patterns like <strong>Shunzi</strong> (sequential tiles of the same type), <strong>Kezi</strong> (three identical tiles), and <strong>Duizi</strong> (two identical tiles).</li>
+        <li>Achieve <strong>Hu</strong> by forming Kezi or Shunzi in all 4 groups of 3 tiles and Duizi in the final group of 2 tiles.</li>
+      </ul>
+      <p><strong>Examples:</strong></p>
+      <ul>
+        <li><strong>Shunzi:</strong> 1条, 2条, 3条 (Sequential tiles of the same type)</li>
+        <li><strong>Kezi:</strong> 3万, 3万, 3万 (Three identical tiles)</li>
+        <li><strong>Duizi:</strong> 5筒, 5筒 (Two identical tiles)</li>
+        <li><strong>Hu:</strong> 4 valid groups of Shunzi/Kezi and 1 group of Duizi</li>
+      </ul>
+      <button id="start-game">Start Game</button>
+    </div>
+  </div>
+  <h1>Mahjong Game</h1>
+  <div id="game-board"></div>
+  <button id="play-btn" disabled>Play</button>
+  <div id="timer">Time Left: 60</div>
+  <div id="score-message"></div>
+  <button id="view-leaderboard">View Leaderboard</button>
+<div id="leaderboard"></div>
+  <script src="game.js"></script>
+</body>
+</html>
